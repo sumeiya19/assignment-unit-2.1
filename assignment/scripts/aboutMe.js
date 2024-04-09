@@ -45,10 +45,11 @@ console.log( 'allowedPets:', allowedPets);
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = true;
-if ( adventurous ) {
+let result;
+if ( adventurous === true ) {
+  result = 'Adventures are great!'
   console.log( 'Adventures are great!' );
-} // end result
+} 
 else{
  console.log( 'How about we stay home?' ); 
 } 
@@ -73,12 +74,14 @@ console.log( diceRoll );
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = 'petStatus';
+let petStatus;
 if (pets < allowedPets) {
+  petStatus = 'I can have more pets'
   console.log( 'I can have more pets' );
 } 
 else if ('pets' === 'allowedPets') {
-console.log( 'I have enough pets' );
+  petStatus = 'I have enough pets'  
+  console.log( 'I have enough pets' );
 }
 else {
   console.log( 'Oh no, I have too many pets!' );
